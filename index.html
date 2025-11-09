@@ -1,11 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Marco Maggiani</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-  <h1>Website under construction</h1>
-  <p>This will be updated soon.</p>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title"><a href="/">Marco Maggiani</a></h1>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/research.html">Research</a>
+      <a href="/teaching.html">Teaching</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>About</h2>
+
+  <p>I am a PhD candidate in Philosophy at the University of Pittsburgh, working in the philosophy of physics, the philosophy of science, metaphysics, and epistemology. My dissertation includes papers on the Unruh Effect, Boltzmann Brains, and indifference principles.</p>
+
+  <p>Email: <a href="mailto:YOUR_EMAIL_HERE">mam773@pitt.edu</a></p>
+
+  <p><a href="/assets/CV.pdf">CV (PDF)</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Marco Maggiani</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>

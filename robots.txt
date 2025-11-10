@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /research.html
+Disallow: /teaching.html
+Allow: /
+Sitemap: https://marcomaggiani.com/sitemap.xml

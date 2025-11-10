@@ -3,12 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <title>Research – Marco Maggiani</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Page-specific polish to mirror Home */
+    .section { padding-top: 0.25rem; border-top: 1px solid rgba(0,0,0,0.06); margin-top: 1.25rem; }
+    .pubs { list-style: none; padding: 0; margin: 0; }
+    .pubs li { margin: 0 0 0.9rem; }
+    .meta { opacity: 0.75; }
+    /* Keep the year glued to the journal name */
+    .nowrap { white-space: nowrap; }
+  </style>
 </head>
 
 <body>
-
 <header class="site-header">
   <div class="container">
     <h1 class="site-title"><a href="index.html">Marco Maggiani</a></h1>
@@ -23,51 +31,53 @@
 <main class="container">
   <h2>Research</h2>
 
-  <section>
+  <div class="section">
     <h3>Publications</h3>
     <ul class="pubs">
       <li>
-        <span class="title">The Unruh Effect and Theory Interpretation in an Effective Framework</span>.
-        <span class="meta"><i>Philosophy of Physics</i> (2025).</span>
+        The Unruh Effect and Theory Interpretation in an Effective Framework.
+        <span class="meta">Philosophy of Physics&nbsp;<span class="nowrap">(2025)</span>.</span>
+        <br>
         <a href="https://philosophyofphysics.lse.ac.uk/articles/10.31389/pop.193">Published version</a>
       </li>
     </ul>
-  </section>
+  </div>
 
-  <section>
+  <div class="section">
     <h3>Works in Progress</h3>
     <ul class="pubs">
-
       <li>
-        <span class="title">Effective Realism and the Problem of Boltzmann Brains</span>.
+        Effective Realism and the Problem of Boltzmann Brains.
         <span class="meta">draft available</span>
+        <br>
         <a href="https://philsci-archive.pitt.edu/27059/">Preprint (PhilSci-Archive)</a>
       </li>
 
       <li>
-        <span class="title">Grounding and Ontological Economy</span>.
+        Grounding and Ontological Economy.
         <span class="meta">revise and resubmit</span>
+        <br>
         <a href="mailto:mam773@pitt.edu?subject=Request%20draft:%20Grounding%20and%20Ontological%20Economy">Request draft</a>
       </li>
 
       <li>
-        <span class="title">Universe Indifference</span>.
+        Universe Indifference.
         <span class="meta">draft available</span>
+        <br>
         <a href="mailto:mam773@pitt.edu?subject=Request%20draft:%20Universe%20Indifference">Request draft</a>
       </li>
 
       <li>
-        <span class="title">Verbal Disputes and the Past Hypothesis</span>.
+        Verbal Disputes and the Past Hypothesis.
         <span class="meta">in progress</span>
       </li>
 
       <li>
-        <span class="title">Truthmakers, Presentism, and Black Holes</span>.
+        Truthmakers, Presentism, and Black Holes.
         <span class="meta">in progress</span>
       </li>
-
     </ul>
-  </section>
+  </div>
 </main>
 
 <footer class="site-footer">
@@ -79,6 +89,5 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>

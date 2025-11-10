@@ -70,6 +70,25 @@ main h2 {
   margin-top: 36px;
 }
 
+/* Remove bullets globally for content lists */
+main ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1.2rem 0;
+}
+
+/* Publication list spacing */
+.pubs li,
+main ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* Metadata style (journals/status notes) */
+.meta {
+  color: var(--muted);
+  font-style: italic;
+}
+
 p {
   text-align: justify;
 }

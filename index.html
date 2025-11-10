@@ -1,48 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Marco Maggiani</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Match the Research page's minimal wrapper + nav polish */
-    .wrap { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; }
-    nav { margin-bottom: 1.5rem; font-size: 0.95rem; }
-    nav a { text-decoration: none; }
-    nav a + a { margin-left: 1rem; }
-    h1 { margin: 0 0 1rem; font-size: 1.6rem; }
-    p { line-height: 1.6; }
-    /* Keep body text justified while headings/nav stay left-aligned */
-    .content { text-align: justify; }
-    .content h1, .content nav { text-align: left; }
-  </style>
 </head>
 <body>
-  <div class="wrap content">
-    <nav>
-      <a href="index.html">Home</a>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title"><a href="index.html">Marco Maggiani</a></h1>
+    <nav class="site-nav">
+      <a class="active" href="index.html">Home</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
     </nav>
-
-    <h1>Marco Maggiani</h1>
-
-    <h2>About</h2>
-    <p>
-      I am a PhD candidate in Philosophy at the University of Pittsburgh, working in the
-      philosophy of physics, the philosophy of science, metaphysics, and epistemology.
-      My dissertation includes papers on the Unruh Effect, Boltzmann Brains, and
-      indifference principles.
-    </p>
-
-    <p>Email: <a href="mailto:mam773@pitt.edu">mam773@pitt.edu</a></p>
-    <p><a href="Maggiani_CV.pdf">CV (PDF)</a></p>
   </div>
-</body>
-</html>
+</header>
 
+<main class="container">
+  <h2>About</h2>
 
+  <p>I am a PhD candidate in Philosophy at the University of Pittsburgh, working in the philosophy of physics, the philosophy of science, metaphysics, and epistemology. My dissertation includes papers on the Unruh Effect, Boltzmann Brains, and indifference principles.</p>
 
+  <p>Email: <a href="mailto:mam773@pitt.edu">mam773@pitt.edu</a></p>
+
+  <p><a href="Maggiani_CV.pdf">CV (PDF)</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Marco Maggiani</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
